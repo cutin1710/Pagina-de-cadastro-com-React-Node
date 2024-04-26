@@ -3,14 +3,14 @@ import './Input.css'
 
 export default (props) => {
 
-    let classes = 'input '
-    classes += props.email ? 'email' : ''
-    classes += props.password ? 'password' : ''
+    let classes = ''
+    classes += props.email ? 'Email' : ''
+    classes += props.password ? 'Password' : ''
+    classes += props.checkbox ? 'checkbox' : ''
 
     return(
         <div>
-            <input type={classes} name={classes} placeholder={classes} required/>
-            <input type={classes} name={classes} placeholder={classes} required/>
+            <input type={classes} name={classes} placeholder={classes} className={classes} required />
         </div>
     )
 

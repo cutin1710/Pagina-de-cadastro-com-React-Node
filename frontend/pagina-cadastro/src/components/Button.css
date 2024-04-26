@@ -1,0 +1,17 @@
+.loginBtnContainer {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBtn {
+    width: 20vw;
+    height: 5vh;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: 'century';
+    font-size: 22px;
+    font-weight: bold;
+}
