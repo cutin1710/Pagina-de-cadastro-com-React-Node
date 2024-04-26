@@ -16,13 +16,7 @@
     font-family: century;
     font-size: 50px;
     font-weight: 600;
-}
-
-.checkboxContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
+    margin-bottom: 60px;
 }
 
 .loginInformationsContainer {

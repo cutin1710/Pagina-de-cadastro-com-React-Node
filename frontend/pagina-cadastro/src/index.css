@@ -5,6 +5,10 @@
     src: url('fonts/Dominik\ Thin/DOMINIKTH.TTF');
 }
 
+* {
+    font-family: 'century';
+}
+
 body {
     display: flex;
     align-items: center;

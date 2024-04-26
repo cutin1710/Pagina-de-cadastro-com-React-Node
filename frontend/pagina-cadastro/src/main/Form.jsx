@@ -16,8 +16,8 @@ export default class Form extends Component {
                     </div>
                     <div className='loginInformationsContainer'>
                         <div className='loginInformations'>
-                            <div className='checkboxContainer'><Input checkbox /><label>Remeber me</label></div>
-                            <div className='forgotPassword'><label>Forgot Password?</label></div>
+                            <div className='checkboxContainer'><Input checkbox className="checkbox"/><label>Remeber me</label></div>
+                            <div className='forgotPassword'><label>Forgot Password ?</label></div>
                         </div>
                     </div>
                     <div className='loginBtnContainer'><Button /></div>

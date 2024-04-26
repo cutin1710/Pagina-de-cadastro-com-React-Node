@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .loginBtn {
@@ -14,4 +15,5 @@
     font-family: 'century';
     font-size: 22px;
     font-weight: bold;
+    cursor: pointer;
 }

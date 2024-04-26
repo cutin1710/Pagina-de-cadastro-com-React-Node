@@ -10,12 +10,14 @@
     display: flex;
     align-items: center;
     outline: none;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 ::-webkit-input-placeholder {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .inputContainer {
@@ -24,6 +26,44 @@
     align-items: center;
 }
 
-.Ckeckbox {
-   cursor: pointer;  
+.checkbox {
+   cursor: pointer;
+   width: 2.3vh;
+   height: 2.3vh;
+   outline: none;
+   border: none;
+}
+
+.checkbox:checked:after {
+    cursor: pointer;
+    width: 2.3vh;
+    height: 2.3vh;
+    outline: none;
+    border: none;
+ }
+
+.checkboxContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkboxContainer > label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.forgotPassword > label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.forgotPassword > label:hover {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(172, 172, 255);
 }
