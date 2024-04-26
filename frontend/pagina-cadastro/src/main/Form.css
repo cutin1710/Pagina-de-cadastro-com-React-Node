@@ -6,7 +6,7 @@
     width: 30vw;
     height: 60vh;
     background-color: #ffffff10;
-    border: 2px solid #ffffff30;
+    border: 1px solid #ffffff30;
     backdrop-filter: blur(10px);
     border-radius: 20px;
 }

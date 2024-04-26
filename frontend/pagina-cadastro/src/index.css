@@ -14,20 +14,19 @@ body {
     align-items: center;
     justify-content: center;
     height: 98.4vh;
-    background: linear-gradient(to top, rgb(115, 113, 221), rgb(198, 197, 255));
+    background: linear-gradient(to top, rgb(219, 215, 204) 50%, rgb(255, 255, 255));
 }
 
 .formImage {
-    background-image: url('./images/login-bg.png');
     width: 50vw;
     height: 80vh;
     background-size: cover;
 }
 
 .content {
-    background-image: url('./images/login-bg.png');
-    width: 85vw;
-    height: 90vh;
+    background-image: url('./images/luca-cavallin-AvkE2aDr6cA-unsplash.jpg');
+    width: 90vw;
+    height: 87vh;
     background-size: cover;
     display: flex;
     align-items: center;
