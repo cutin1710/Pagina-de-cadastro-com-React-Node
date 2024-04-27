@@ -1,39 +1,46 @@
-import React, { Component } from 'react'
+import React, {useState} from 'react'
 import './Form.css'
+import axios from 'axios'
 
 import Input from '../components/Input.jsx'
 import Button from '../components/Button.jsx'
 
-export default class Form extends Component {
+function Form() {
 
-    constructor (props) {
-        super(props)
-        this.handleLogin = this.handleLogin.bind(this)
-    }
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
-    handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
     
-        console.log('login clicked')
-    }
+        console.log(email, password)
 
-    render() {
-        return (
-            <div>
-                <form className='loginForm'>
-                    <div className='inputContainer'>
-                        <Input email />
-                        <Input password />
-                    </div>
-                    <div className='loginInformationsContainer'>
-                        <div className='loginInformations'>
-                            <div className='checkboxContainer'><Input checkbox className="checkbox"/><label>Remeber me</label></div>
-                            <div className='forgotPassword'><label>Forgot Password ?</label></div>
-                        </div>
-                    </div>
-                    <div className='loginBtnContainer'><Button click={this.handleLogin}/></div>
-                </form>
-            </div>
+        const response = await axios.post('http://localhost:3001/login',
+            JSON.stringify({email, password}),
+            {
+                headers: { 'Content-Type': 'aplication/json', }
+                
+            }
         )
     }
+
+    return (
+        <div>
+            <form className='loginForm'>
+                <div className='inputContainer'>
+                    <Input email onchange={(e) => setEmail(e.target.value)} />
+                    <Input password onchange={(e) => setPassword(e.target.value)} /> 
+                </div>
+                <div className='loginInformationsContainer'>
+                    <div className='loginInformations'>
+                        <div className='checkboxContainer'><Input checkbox className="checkbox"/><label>Remeber me</label></div>
+                        <div className='forgotPassword'><label>Forgot Password ?</label></div>
+                    </div>
+                </div>
+                <div className='loginBtnContainer'><Button click={(e) => handleLogin(e)}/></div>
+            </form>
+        </div>
+    )
 }
+
+export default Form;
