@@ -5,11 +5,22 @@ import Input from '../components/Input.jsx'
 import Button from '../components/Button.jsx'
 
 export default class Form extends Component {
+
+    constructor (props) {
+        super(props)
+        this.handleLogin = this.handleLogin.bind(this)
+    }
+
+    handleLogin = (e) => {
+        e.preventDefault();
     
+        console.log('login clicked')
+    }
+
     render() {
         return (
             <div>
-                <form action="" method='POST'>
+                <form className='loginForm'>
                     <div className='inputContainer'>
                         <Input email />
                         <Input password />
@@ -20,7 +31,7 @@ export default class Form extends Component {
                             <div className='forgotPassword'><label>Forgot Password ?</label></div>
                         </div>
                     </div>
-                    <div className='loginBtnContainer'><Button /></div>
+                    <div className='loginBtnContainer'><Button click={this.handleLogin}/></div>
                 </form>
             </div>
         )

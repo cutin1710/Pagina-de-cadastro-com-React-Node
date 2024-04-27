@@ -10,7 +10,7 @@ export default (props) => {
 
     return(
         <div>
-            <input type={classes} name={classes} placeholder={classes} className={classes} required />
+            <input type={classes} name={classes} placeholder={classes} className={classes}  />
         </div>
     )
 
