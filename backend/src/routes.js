@@ -1,12 +1,20 @@
 const express = require('express')
 
 const routes = express.Router()
-const users = [{
-    id: 1,
-    name: 'Gabriel',
-    email: 'gcutin@gmail.com',
-    password: '123'
-}]
+const users = [
+    {
+        id: 1,
+        name: 'Gabriel',
+        email: 'gcutin@gmail.com',
+        password: '123'
+    },
+    {
+        id: 2,
+        name: 'Pedro',
+        email: 'pedro@gmail.com',
+        password: '123'
+    }    
+]
 
 routes.post('/login', (req, res) => {
     const {email, password} = req.body
