@@ -56,3 +56,10 @@
     font-weight: bold;
     cursor: pointer;
 }
+
+.logedScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+} 

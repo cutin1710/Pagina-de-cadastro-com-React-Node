@@ -14,8 +14,6 @@ function Form() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-    
-        console.log(email, password)
 
         try{
             const response = await axios.post('http://localhost:3000/login',
@@ -62,7 +60,7 @@ function Form() {
                     <p className='errorWarning'>{error}</p>
                 </div>
             ) : (
-                <div>
+                <div className='logedScreen'>
                     <h2 className='formTitle'>Olá, {user.name}</h2>
                     <button type='button' className='logoutBtn' onClick={(e) => handleLogout(e)}>Logout</button>
                 </div>
