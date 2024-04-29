@@ -8,7 +8,6 @@ import Form from './main/Form.jsx';
 ReactDOM.render(
   <div className='content'>
     <div className='formContent'>
-      <h1 className='formTitle'>Login</h1>
       <Form />
     </div>
   </div> 

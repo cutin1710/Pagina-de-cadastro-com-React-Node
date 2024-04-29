@@ -4,20 +4,20 @@ const routes = express.Router()
 const users = [{
     id: 1,
     name: 'Gabriel',
-    Email: 'gcutin@gmail.com',
-    Password: '123'
+    email: 'gcutin@gmail.com',
+    password: '123'
 }]
 
 routes.post('/login', (req, res) => {
-    const {Email, Password} = req.body
+    const {email, password} = req.body
 
-    const user = users.find(user => user.Email === Email && user.Password === Password)
+    const user = users.find(user => user.email === email && user.password === password)
     if (user) {
         return res.status(200).json(user)
     }
     return res.status(401).json({ message: 'Invalid credentials' })
 
-    res.send(Email)
+    res.send(email)
 })
 
 module.exports = routes

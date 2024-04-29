@@ -17,6 +17,9 @@
     font-size: 50px;
     font-weight: 600;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .loginInformationsContainer {
@@ -31,4 +34,25 @@
     justify-content: space-between;
     width: 20vw;
     margin: 20px 0px;
+}
+
+.errorWarning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 105, 105);
+}
+
+.logoutBtn {
+    width: 15vw;
+    height: 5vh;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    font-family: 'century';
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
 }
